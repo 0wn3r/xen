@@ -293,11 +293,25 @@ pre-defined by configuration using physical address ranges.
 
     Status, ARM: Tech Preview
 
+### Static Heap
+
+Allow reserving parts of RAM through the device tree using physical
+address ranges as heap.
+
+    Status, ARM: Tech Preview
+
 ### Memory Sharing
 
 Allow sharing of identical pages between guests
 
     Status, x86 HVM: Experimental
+
+### Static Memory Sharing
+
+Allow to statically set up shared memory on dom0less system,
+enabling domains to do shm-based communication
+
+    Status, ARM: Tech Preview
 
 ### Memory Paging
 

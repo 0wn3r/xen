@@ -38,13 +38,13 @@ dist
 stubdom/*.tar.gz
 
 autom4te.cache/
+build-*/
 config.log
 config.status
 config.cache
 config/Toplevel.mk
 config/Paths.mk
 
-build-*
 dist/*
 docs/tmp.*
 docs/html/
@@ -169,6 +169,7 @@ tools/flask/utils/flask-loadpolicy
 tools/flask/utils/flask-setenforce
 tools/flask/utils/flask-set-bool
 tools/flask/utils/flask-label-pci
+tools/helpers/init-dom0less
 tools/helpers/init-xenstore-domain
 tools/helpers/xen-init-dom0
 tools/hotplug/common/hotplugpath.sh
@@ -274,6 +275,7 @@ xen/arch/x86/efi/mkreloc
 xen/arch/x86/include/asm/asm-macros.h
 xen/arch/*/xen.lds
 xen/arch/*/efi/boot.c
+xen/arch/*/efi/common-stub.c
 xen/arch/*/efi/compat.c
 xen/arch/*/efi/ebmalloc.c
 xen/arch/*/efi/efi.h
